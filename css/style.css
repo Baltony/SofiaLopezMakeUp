@@ -1,0 +1,235 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+li{
+	list-style: none;
+}
+
+nav, footer {
+	background-color: #231f20;
+}
+
+nav h1 {
+	height: 60px;
+	width: 120px;
+	background: url("../imagenes/logo-alternativo.svg") no-repeat center;
+	margin: 0;
+	font-size: 0;
+}
+
+nav div:nth-child(3) {
+	padding-top: 16px;
+}
+
+#carrito, #lupa {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+
+#carrito {
+	background: url(../imagenes/carrito.svg) no-repeat top;
+}
+
+#contador {
+	border-radius: 100%;
+	position: absolute;
+	top: 5px;
+	right: 7px; 
+	z-index: 1000;
+	width: 20px;
+	height: 20px;
+	background-color: #7c1f5d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#contador span {
+	font-size: 12px;
+	color: white;
+}
+
+#lupa {
+	background: url(../imagenes/lupa.svg) no-repeat top;
+	margin-right: 30px;
+}
+
+img {
+	max-width: 100%;
+}
+
+aside > div {
+	max-width: 320px;
+	max-height: 170px;
+	margin: auto;
+}
+
+aside {
+	margin-top: 30px;
+}
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators li{
+	filter: invert(70%);
+}
+
+h2 {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.destacados {
+	max-width: 300px;
+	margin: auto;
+}
+
+.destacados .card {
+	margin-top: 20px;
+}
+
+.categoria {
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 80px;
+	border-radius: 15px;
+	font-size: 1.3rem;
+	line-height: 65px;
+}
+
+.mosaico {
+	margin-top: 10%;
+}
+
+.mosaico img{
+	border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+footer {
+	margin-top: 20px;
+}
+
+footer div {
+	padding: 30px 0;
+}
+
+#contacto {
+	display: block;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	background: url(../imagenes/logo.svg) no-repeat center;
+}
+
+footer div div p {
+	color: white;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+footer div ul li a {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+a[href*="sofia"] {
+	text-decoration: none;
+	display: inline-block;
+	width: 250px;
+	color: white;
+	text-align: right;
+	background: url(../imagenes/mail.svg) no-repeat;
+}
+
+#redes {
+	padding: 0 80px;
+}
+
+#wp {
+	background: url(../imagenes/wp.svg) no-repeat center;
+}
+
+#ig {
+	width: 50px;
+	height: 50px;
+	background: url(../imagenes/ig.svg) no-repeat center;
+}
+
+#fb {
+	background: url(../imagenes/fb.svg) no-repeat center;
+}
+
+/* ---------- PRODUCTOS ------------*/
+
+.productos {
+	max-width: 300px;
+	margin: 20px;
+	padding: 0;
+}
+
+.productos a:hover, .mosaico a:hover {
+	filter: opacity(75%);
+}
+
+.productos p, .exit{
+	color: #7c1f5d;
+}
+
+.productos div {
+	text-align: center;
+}
+
+.exit {
+	margin-top: 10px;
+}
+
+.exit:hover {
+	text-decoration: none;
+	color: #67194d;
+}
+
+/* -------------- PRODUCTO INDIVIDUAL -------*/
+
+.descripcion {
+	padding: 1.5rem;
+}
+
+.descripcion h3{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.sumayresta {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	font-size: 1.5rem;
+	font-weight: 1000;
+}
+
+.precio {
+	font-size: 1.5rem;
+	display: block;
+	margin-top: 10px;
+}
+
+#cantidad {
+	font-size: 2.5rem;
+	font-weight: 500;
+	vertical-align: center;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.compras {
+	width: 300px;
+	margin-top: 15px;
+	border-radius: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sofia Make Up</title>
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark row">
+		<div class="col">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-lg-center" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="productos.html">Productos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<h1 class="col order-lg-first col-lg-2 align-self-baseline">Sofia Make Up</h1>
+		<div class="col col-lg-2 d-flex justify-content-end align-self-start">
+			<a id="lupa" href=""></a>
+			<div>
+				<a id="carrito" href="">
+					<div id="contador">
+						<span>0</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</nav>
+	<aside class="container">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="imagenes/slide1.jpg" class="d-block img-fluid" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="imagenes/slide2.jpg" class="d-block img-fluid" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="imagenes/slide3.jpg" class="d-block img-fluid" alt="...">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</aside>
+	<main class="container">
+		<section>
+			<h2>Productos Destacados</h2>
+			<div class="destacados">
+				<div class="card productos">
+					<a href="vinchas.html">
+						<img src="imagenes/vinchas300x300.jpg" class="card-img-top img-fluid" alt="Vinchas Skincare">
+					</a>
+					<div class="card-body">
+						<h3 class="card-title">$300</h3>
+						<p class="card-text">Vinchas Skincare</p>
+						<a href="#" class="btn btn-primary">Agregar al carrito</a>
+					</div>
+				</div>
+				<div class="card productos">
+					<a href="promoterexel.html">
+						<img src="imagenes/exepromoter300x300.jpg" class="card-img-top img-fluid" alt="Prometer marca Exel">
+					</a>
+					<div class="card-body">
+						<h3 class="card-title">$899</h3>
+						<p class="card-text">Promoter Exel</p>
+						<a href="#" class="btn btn-primary">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<h2>Categorías</h2>
+			<div class="container">
+				<a href="#" class="btn btn-primary categoria">Make up</a>
+				<a href="#" class="btn btn-primary categoria">Skincare</a>
+				<a href="#" class="btn btn-primary categoria">Accesorios</a>
+				<a href="productos.html" class="btn btn-outline-primary categoria">Ver todos los productos</a>
+			</div>
+		</section>
+		<section>
+			<h2>Más vendidos</h2>
+			<div class="row justify-content-center">
+				<div class="col-6 mosaico">
+					<a href="hydrapore.html">
+						<img src="imagenes/hydrapore150x150.jpg" class="d-block m-auto img-fluid" alt="Crena Hydrapore">
+					</a>
+				</div>
+				<div class="col-6 mosaico">
+					<a href="vitaminc.html">
+						<img src="imagenes/vitaminc150x150.jpg" class="d-block m-auto img-fluid" alt="Hidratante con vitamina C">
+					</a>
+				</div>
+				<div class="col-6 mosaico">
+					<a href="pads.html">
+						<img src="imagenes/pads150x150.jpg" class="d-block m-auto img-fluid" alt="Pads">
+					</a>
+				</div>
+				<div class="col-6 mosaico">
+					<a href="promoterexel.html">
+						<img src="imagenes/exepromoter150x150.jpg" class="d-block m-auto img-fluid" alt="Promoter marca Exel">
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<a id="contacto" href="index.html"></a>
+			<div>
+				<p>Contacto</p>
+				<ul id="redes" class="d-flex justify-content-between">
+					<li><a id="wp" href="#"></a></li>
+					<li><a id="ig" href="https://www.instagram.com/sofialopez.makeup"></a></li>
+					<li><a id="fb" href="#"></a></li>
+				</ul> 
+			</div>
+			<div>
+				<p><a href="mailto:sofia.lopez@makeup.com.ar">Sofia.lopez@makeup.com.ar</a></p>
+			</div>
+			<div>
+				<p>Sofia Lopez Make Up © 2020</p>
+				<p>Todos los derechos reservados</p>
+			</div>
+		</div>
+	</footer>
+	<script src="js/popper.min.js"></script>
+	<script src="js/jquery-3.5.1.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
