@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Sofia Make Up</title>
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -21,21 +22,18 @@
 					<li class="nav-item">
 						<a class="nav-link" href="productos.html">Productos</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
 				</ul>
 			</div>
 		</div>
 		<h1 class="col order-lg-first col-lg-2 align-self-baseline">Sofia Make Up</h1>
 		<div class="col col-lg-2 d-flex justify-content-end align-self-start">
-			<a id="lupa" href=""></a>
+			<div id="lupa"></div>
 			<div>
-				<a id="carrito" href="">
+				<div id="carrito" onclick="Carrito()" data-toggle="modal" data-target="#carritoModal">
 					<div id="contador">
 						<span>0</span>
 					</div>
-				</a>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -78,7 +76,7 @@
 					<div class="card-body">
 						<h3 class="card-title">$300</h3>
 						<p class="card-text">Vinchas Skincare</p>
-						<a href="#" class="btn btn-primary">Agregar al carrito</a>
+						<button class="btn btn-primary" onclick="Agregar()">Agregar al carrito</button>
 					</div>
 				</div>
 				<div class="card productos">
@@ -88,17 +86,14 @@
 					<div class="card-body">
 						<h3 class="card-title">$899</h3>
 						<p class="card-text">Promoter Exel</p>
-						<a href="#" class="btn btn-primary">Agregar al carrito</a>
+						<button class="btn btn-primary" onclick="Agregar()">Agregar al carrito</button>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section>
-			<h2>Categorías</h2>
+			<h2>Productos</h2>
 			<div class="container">
-				<a href="#" class="btn btn-primary categoria">Make up</a>
-				<a href="#" class="btn btn-primary categoria">Skincare</a>
-				<a href="#" class="btn btn-primary categoria">Accesorios</a>
 				<a href="productos.html" class="btn btn-outline-primary categoria">Ver todos los productos</a>
 			</div>
 		</section>
@@ -151,5 +146,6 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/jquery-3.5.1.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/final.js"></script>
 </body>
 </html>

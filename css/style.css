@@ -28,8 +28,18 @@ nav div:nth-child(3) {
 	height: 25px;
 }
 
+#carrito:hover, #lupa:hover {
+	cursor: pointer;
+}
+
 #carrito {
 	background: url(../imagenes/carrito.svg) no-repeat top;
+}
+
+.productoFinal {
+	margin-bottom: 10px;
+	display: block;
+	font-size: 1.2rem;
 }
 
 #contador {
@@ -210,6 +220,13 @@ a[href*="sofia"] {
 	height: 40px;
 	font-size: 1.5rem;
 	font-weight: 1000;
+}
+
+.sumayrestaMiniatura {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	text-align: center;
 }
 
 .precio {
