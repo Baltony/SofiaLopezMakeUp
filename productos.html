@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Sofia Make Up - Productos</title>
@@ -23,12 +23,15 @@
 					<li class="nav-item">
 						<a class="nav-link" href="productos.html">Productos</a>
 					</li>
+					<li class="nav-item info" onclick="Info()">
+						Info
+					</li>
 				</ul>
 			</div>
 		</div>
 		<h1 class="col order-lg-first col-lg-2 align-self-baseline">Sofia Make Up</h1>
 		<div class="col col-lg-2 d-flex justify-content-end align-self-start">
-			<div id="lupa"></div>
+			<div id="total" onclick="Carrito()" data-toggle="modal" data-target="#carritoModal"><span>$0</span></div>
 			<div>
 				<div id="carrito" onclick="Carrito()" data-toggle="modal" data-target="#carritoModal">
 					<div id="contador">
@@ -45,79 +48,17 @@
 		<header>
 			<h2>Productos</h2>
 		</header>
-		<div id="cardHolder" class="row justify-content-center">
-			<!--<div class="card col-6 productos">
-				<a href="vinchas.html">
-					<img src="imagenes/vinchas300x300.jpg" class="card-img-top img-fluid" alt="Vinchas skincare">
-				</a>
-				<div class="card-body">
-					<h3 class="card-title">$300</h3>
-					<p class="card-text">Vinchas Skincare</p>
-					<button class="btn btn-primary" data-id="1" data-precio="300" onclick="Agregar()">Agregar al carrito</button>
-				</div>
-			</div>
-			<div class="card col-6 productos">
-				<a href="promoterexel.html">
-					<img src="imagenes/exepromoter300x300.jpg" class="card-img-top img-fluid" alt="Promoter marca Exel">
-				</a>
-				<div class="card-body">
-					<h3 class="card-title">$899</h3>
-					<p class="card-text">Promoter Exel</p>
-					<button class="btn btn-primary" data-id="2" data-precio="899" onclick="Agregar()">Agregar al carrito</button>
-				</div>
-			</div>
-			<div class="card col-6 productos">
-				<a href="hydrapore.html">
-					<img src="imagenes/hydrapore300x300.jpg" class="card-img-top img-fluid" alt="crema Hydrapore marca Lidherma">
-				</a>
-				<div class="card-body">
-					<h3 class="card-title">$1160</h3>
-					<p class="card-text">Lidherma crema Hydrapore</p>
-					<button class="btn btn-primary" data-id="3" data-precio="1160" onclick="Agregar()">Agregar al carrito</button>
-				</div>
-			</div>
-			<div class="card col-6 productos">
-				<a href="pads.html">
-					<img src="imagenes/pads300x300.jpg" class="card-img-top img-fluid" alt="Pads skincare reutilizables">
-				</a>
-				<div class="card-body">
-					<h3 class="card-title">$300</h3>
-					<p class="card-text">Pads reutilizables</p>
-					<button class="btn btn-primary" data-id="4" data-precio="300" onclick="Agregar()">Agregar al carrito</button>
-				</div>
-			</div>
-			<div class="card col-6 productos">
-				<a href="vitaminc.html">
-					<img src="imagenes/vitaminc300x300.jpg" class="card-img-top img-fluid" alt="Hidratante con vitamina C">
-				</a>
-				<div class="card-body">
-					<h3 class="card-title">$1499</h3>
-					<p class="card-text">Idraet Vitamin C serum</p>
-					<button class="btn btn-primary" data-id="5" data-precio="1499" onclick="Agregar()">Agregar al carrito</button>
-				</div>
-			</div>
-			<div class="card col-6 productos">
-				<a href="ultrarenovapads.html">
-					<img src="imagenes/lidhermapads300x300.jpg" class="card-img-top img-fluid" alt="Pads Lidherma Ultra Renova">
-				</a>
-				<div class="card-body">
-					<h3 class="card-title">$799</h3>
-					<p class="card-text">Ultra Renova pads</p>
-					<button class="btn btn-primary" data-id="6" data-precio="799" onclick="Agregar()">Agregar al carrito</button>
-				</div>
-			</div>-->
-		</div>
+		<section id="cardHolder" class="row justify-content-center">
+		</section>
 	</main>
 	<footer>
 		<div class="container">
 			<a id="contacto" href="index.html"></a>
 			<div>
 				<p>Contacto</p>
-				<ul id="redes" class="d-flex justify-content-between">
-					<li><a id="wp" href="#"></a></li>
-					<li><a id="ig" href="https://www.instagram.com/sofialopez.makeup"></a></li>
-					<li><a id="fb" href="#"></a></li>
-				</ul> 
+				<div id="redes" class="d-flex justify-content-center">
+					<a id="ig" href="https://www.instagram.com/sofialopez.makeup"></a>
+				</div> 
 			</div>
 			<div>
 				<p><a href="mailto:sofia.lopez@makeup.com.ar">Sofia.lopez@makeup.com.ar</a></p>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sofia Make Up - Crema-Gel Hydrapore</title>
+	<meta charset="UTF-8">
+	<title>Sofia Make Up - Productos</title>
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -21,21 +22,22 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="productos.html">Productos</a>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item info" onclick="Info()">
+						Info
 					</li>
 				</ul>
 			</div>
 		</div>
 		<h1 class="col order-lg-first col-lg-2 align-self-baseline">Sofia Make Up</h1>
 		<div class="col col-lg-2 d-flex justify-content-end align-self-start">
-			<a id="lupa" href=""></a>
+			<div id="total" onclick="Carrito() data-toggle="modal" data-target="#carritoModal""><span>$0</span></div>
 			<div>
-				<a id="carrito" href="">
+				<div id="carrito" onclick="Carrito()" data-toggle="modal" data-target="#carritoModal">
 					<div id="contador">
 						<span>0</span>
 					</div>
-				</a>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -56,15 +58,6 @@
 				<p>- Alivia la sensación de tirantez y brinda elasticidad y suavidad.</p>
 				<p>- Indicada para toda edad y en todo tipo de piel, con muy buena tolerancia en pieles sensibles y grasas deshidratadas. </p>
 			</div>
-			<div class="col-12 d-flex justify-content-center align-items-center">
-				<button class="btn-outline-primary sumayresta">-</button>
-				<span id="cantidad">1</span>
-				<button class="btn-primary sumayresta">+</button>
-			</div>
-			<div class="col-12 d-flex flex-column justify-content-center">
-				<button class="btn btn-primary compras">Comprar</button>
-				<button class="btn btn-outline-primary compras">Agregar al carrito</button>
-			</div>
 		</div>
 	</main>
 	<footer>
@@ -72,11 +65,9 @@
 			<a id="contacto" href="index.html"></a>
 			<div>
 				<p>Contacto</p>
-				<ul id="redes" class="d-flex justify-content-between">
-					<li><a id="wp" href="#"></a></li>
-					<li><a id="ig" href="https://www.instagram.com/sofialopez.makeup"></a></li>
-					<li><a id="fb" href="#"></a></li>
-				</ul> 
+				<div id="redes" class="d-flex justify-content-center">
+					<a id="ig" href="https://www.instagram.com/sofialopez.makeup"></a>
+				</div> 
 			</div>
 			<div>
 				<p><a href="mailto:sofia.lopez@makeup.com.ar">Sofia.lopez@makeup.com.ar</a></p>
@@ -90,5 +81,6 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/jquery-3.5.1.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/final.js"></script>
 </body>
 </html>

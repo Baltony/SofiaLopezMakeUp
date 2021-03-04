@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Sofia Make Up</title>
@@ -14,6 +14,7 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
 			</button>
+
 			<div class="collapse navbar-collapse justify-content-lg-center" id="collapsibleNavbar">
 				<ul class="navbar-nav">
 					<li class="nav-item">
@@ -22,12 +23,15 @@
 					<li class="nav-item">
 						<a class="nav-link" href="productos.html">Productos</a>
 					</li>
+					<li class="nav-item info" onclick="Info()">
+						Info
+					</li>
 				</ul>
 			</div>
 		</div>
 		<h1 class="col order-lg-first col-lg-2 align-self-baseline">Sofia Make Up</h1>
 		<div class="col col-lg-2 d-flex justify-content-end align-self-start">
-			<div id="lupa"></div>
+			<div id="total" onclick="Carrito()" data-toggle="modal" data-target="#carritoModal"><span>$0</span></div>
 			<div>
 				<div id="carrito" onclick="Carrito()" data-toggle="modal" data-target="#carritoModal">
 					<div id="contador">
@@ -46,13 +50,22 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="imagenes/slide1.jpg" class="d-block img-fluid" alt="...">
+					<picture>
+						<source media="(min-width:700px)" srcset="imagenes/slide1PC.jpg">
+						<img src="imagenes/slide1.jpg" class="d-block img-fluid" alt="...">
+					</picture>
 				</div>
 				<div class="carousel-item">
-					<img src="imagenes/slide2.jpg" class="d-block img-fluid" alt="...">
+					<picture>
+						<source media="(min-width:700px)" srcset="imagenes/slide2PC.jpg">
+						<img src="imagenes/slide2.jpg" class="d-block img-fluid" alt="...">
+					</picture>
 				</div>
 				<div class="carousel-item">
-					<img src="imagenes/slide3.jpg" class="d-block img-fluid" alt="...">
+					<picture>
+						<source media="(min-width:700px)" srcset="imagenes/slide3PC.jpg">
+						<img src="imagenes/slide3.jpg" class="d-block img-fluid" alt="...">
+					</picture>
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -66,56 +79,54 @@
 		</div>
 	</aside>
 	<main class="container">
-		<section>
-			<h2>Productos Destacados</h2>
-			<div class="destacados">
-				<div class="card productos">
+		<section class="row justify-content-center">
+			<h2 class="col-12">Productos Destacados</h2>
+			<div class="destacados row justify-content-center">
+				<div class="card productos col-md-6 ">
 					<a href="vinchas.html">
 						<img src="imagenes/vinchas300x300.jpg" class="card-img-top img-fluid" alt="Vinchas Skincare">
 					</a>
 					<div class="card-body">
 						<h3 class="card-title">$300</h3>
 						<p class="card-text">Vinchas Skincare</p>
-						<button class="btn btn-primary" onclick="Agregar()">Agregar al carrito</button>
 					</div>
 				</div>
-				<div class="card productos">
+				<div class="card productos col-md-6">
 					<a href="promoterexel.html">
 						<img src="imagenes/exepromoter300x300.jpg" class="card-img-top img-fluid" alt="Prometer marca Exel">
 					</a>
 					<div class="card-body">
 						<h3 class="card-title">$899</h3>
 						<p class="card-text">Promoter Exel</p>
-						<button class="btn btn-primary" onclick="Agregar()">Agregar al carrito</button>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section>
 			<h2>Productos</h2>
-			<div class="container">
+			<div class="container d-flex justify-content-center">
 				<a href="productos.html" class="btn btn-outline-primary categoria">Ver todos los productos</a>
 			</div>
 		</section>
-		<section>
+		<section class="container">
 			<h2>Más vendidos</h2>
-			<div class="row justify-content-center">
-				<div class="col-6 mosaico">
+			<div class="row justify-content-center ">
+				<div class="col-6 col-md-3 mosaico ">
 					<a href="hydrapore.html">
 						<img src="imagenes/hydrapore150x150.jpg" class="d-block m-auto img-fluid" alt="Crena Hydrapore">
 					</a>
 				</div>
-				<div class="col-6 mosaico">
+				<div class="col-6 col-md-3 mosaico">
 					<a href="vitaminc.html">
 						<img src="imagenes/vitaminc150x150.jpg" class="d-block m-auto img-fluid" alt="Hidratante con vitamina C">
 					</a>
 				</div>
-				<div class="col-6 mosaico">
+				<div class="col-6 col-md-3 mosaico">
 					<a href="pads.html">
 						<img src="imagenes/pads150x150.jpg" class="d-block m-auto img-fluid" alt="Pads">
 					</a>
 				</div>
-				<div class="col-6 mosaico">
+				<div class="col-6 col-md-3 mosaico">
 					<a href="promoterexel.html">
 						<img src="imagenes/exepromoter150x150.jpg" class="d-block m-auto img-fluid" alt="Promoter marca Exel">
 					</a>
@@ -128,11 +139,9 @@
 			<a id="contacto" href="index.html"></a>
 			<div>
 				<p>Contacto</p>
-				<ul id="redes" class="d-flex justify-content-between">
-					<li><a id="wp" href="#"></a></li>
-					<li><a id="ig" href="https://www.instagram.com/sofialopez.makeup"></a></li>
-					<li><a id="fb" href="#"></a></li>
-				</ul> 
+				<div id="redes" class="d-flex justify-content-center">
+					<a id="ig" href="https://www.instagram.com/sofialopez.makeup"></a>
+				</div> 
 			</div>
 			<div>
 				<p><a href="mailto:sofia.lopez@makeup.com.ar">Sofia.lopez@makeup.com.ar</a></p>

@@ -2037,9 +2037,9 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #80bdff;
+  border-color: rgba(124, 31, 93, 0.50);
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(124, 31, 93, 0.25);
 }
 
 .form-control::-webkit-input-placeholder {
@@ -6534,11 +6534,11 @@ a.close.disabled {
 }
 
 .carousel-control-prev {
-  left: -40px;
+  left: -15px;
 }
 
 .carousel-control-next {
-  right: -40px;
+  right: -15px;
 }
 
 .carousel-control-prev-icon,
