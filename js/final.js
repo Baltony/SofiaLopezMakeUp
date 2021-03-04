@@ -80,6 +80,9 @@ for (let producto of aProductos) {
 	h3.innerHTML = `$${producto.precio}`;
 	let p = d.createElement('p');
 	p.className = 'card-text';
+	let desc = d.createElement('p')
+	desc.className = 'card-text'
+	desc.innerHTML = producto.descripcion;
 	p.innerHTML = producto.nombre;
 	let agregar = d.createElement('button');
 	agregar.className = 'btn btn-primary';
@@ -341,8 +344,8 @@ function Carrito(){
 			tituloModalCheck.appendChild(equis);
 
 			let h4ModalCheck = d.createElement('h4');
-			h4.innerHTML = 'Checkout';
-			tituloModalCheck.appendChild(h4);
+			h4ModalCheck.innerHTML = 'Checkout';
+			tituloModalCheck.appendChild(h4ModalCheck);
 
 			let form = d.createElement('form');
 			form.setAttribute('action', '#');
@@ -647,3 +650,90 @@ function Carrito(){
 	let main = d.querySelector('main');
 	main.appendChild(bodyModal);
 }
+
+function Info(){
+	let divFondo = d.createElement('div');
+	divFondo.className = 'fondoCompra';
+	d.body.appendChild(divFondo);
+
+	let divCuerpo = d.createElement('div');
+	divCuerpo.className = 'compra';
+	divFondo.appendChild(divCuerpo);
+
+	let titulillo = d.createElement('div')
+	titulillo.className = 'titulillo';
+	divCuerpo.appendChild(titulillo);
+
+	let equis = d.createElement('span');
+	equis.className = 'equis';
+	equis.innerHTML = '&times;';
+	titulillo.appendChild(equis);
+
+	let h4 = d.createElement('h4');
+	h4.innerHTML = 'Info del alumno';
+	titulillo.appendChild(h4);
+
+	let alumno = d.createElement('div');
+	alumno.className = 'alumno';
+	divCuerpo.appendChild(alumno);
+
+	let facha = d.createElement('img');
+	facha.className = 'img-fluid';
+	facha.setAttribute('src', 'imagenes/facha.png');
+	alumno.appendChild(facha);
+
+	let ul = d.createElement('ul');
+	alumno.appendChild(ul);
+
+	let liCarrera = d.createElement('li');
+	liCarrera.innerHTML = 'Carrera: Diseño y Programación Web';
+	ul.appendChild(liCarrera);
+
+	let liMateria = d.createElement('li');
+	liMateria.innerHTML = 'Materia: Interacción con Dispositivos Móviles';
+	ul.appendChild(liMateria);
+
+	let liComision = d.createElement('li');
+	liComision.innerHTML = 'Comisión: A';
+	ul.appendChild(liComision);
+
+	let liTurno = d.createElement('li');
+	liTurno.innerHTML = 'Turno: Tarde';
+	ul.appendChild(liTurno);
+
+	let liAnio = d.createElement('li');
+	liAnio.innerHTML = 'Año de cursada: 2020';
+	ul.appendChild(liAnio);
+
+	let liCuatri = d.createElement('li');
+	liCuatri.innerHTML = 'Cuatrimestre: 2';
+	ul.appendChild(liCuatri);
+
+	let liDocente = d.createElement('li');
+	liDocente.innerHTML = 'Docente: Omar Toyos';
+	ul.appendChild(liDocente);
+
+	let liEntrega = d.createElement('li');
+	liEntrega.innerHTML = 'Carácter de entrega: Final';
+	ul.appendChild(liEntrega);
+
+	let liApellido = d.createElement('li');
+	liApellido.innerHTML = 'Apellido: López Russo';
+	ul.appendChild(liApellido);
+
+	let liNombre = d.createElement('li');
+	liNombre.innerHTML = 'Nombre: Julián';
+	ul.appendChild(liNombre);
+
+	let fueraScroll = d.body;
+	fueraScroll.style.overflowY = 'hidden';
+
+	equis.onclick = function() {
+	divFondo.remove();
+	fueraScroll.style.overflowY = 'scroll';
+	fueraScroll.style.paddingRight = 0;
+	}
+}
+
+/*(carrera, materia, comisión, turno, año, cuatrimestre,
+docente, carácter de entrega: final, apellido y nombre del alumno*/
